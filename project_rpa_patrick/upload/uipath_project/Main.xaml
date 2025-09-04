@@ -1,0 +1,726 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>DocumentFormat.OpenXml.Drawing.Charts</x:String>
+      <x:String>DocumentFormat.OpenXml</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Core.Activities.Anchor2</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>DocumentFormat.OpenXml</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1474.2857142857142,8582.285714285714" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dtAFs" />
+      <Variable x:TypeArguments="x:Int32" Name="indice">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="scg:List(x:String)" Name="failedAFsList" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtAFs]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="1474.2857142857142,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="AFs Recebidas" WorkbookPath="C:\Users\livia.concer.DETELLARESTAURA\Desktop\testes\dados_af.xlsx" />
+    <If Condition="[(dtAFs IsNot Nothing) AndAlso (dtAFs.Rows.Count &gt; 0)]" sap:VirtualizedContainerService.HintSize="1474.2857142857142,8439.42857142857" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1440,7042.285714285715" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtAFs]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1405.7142857142858,6982.285714285715" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow.Body>
+              <ActivityAction x:TypeArguments="sd:DataRow">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="1371.4285714285713,6793.142857142857" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="currentRestaurante" />
+                    <Variable x:TypeArguments="x:String" Name="currentAF" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1337.142857142857,6733.142857142857" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                    <TryCatch.Try>
+                      <Sequence sap:VirtualizedContainerService.HintSize="1298.2857142857142,6289.142857142857" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="1264,116" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[currentRestaurante]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow("Restaurante").ToString.Trim]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="1264,116" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[currentAF]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[CurrentRow("AF").ToString.Trim]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Suprimentos - Detella Restaurantes Empresari" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1264,5997.142857142857" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" ScopeGuid="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V2">
+                          <uix:NApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1229.7142857142858,5680" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''push button''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1195.4285714285713,228" sap2010:WorkflowViewState.IdRef="NClick_60" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable CVScreenId="17a27212-e850-4be0-826a-212be917ee80" CvElementArea="285, 92, 41, 42" CvTextArea="289, 96, 33, 17" CvType="Icon" DesignTimeRectangle="286, 92, 40, 39" DesignTimeScaleFactor="1.75" ElementType="Button" FullSelectorArgument="&lt;wnd cls='TToolBar' /&gt;&lt;ctrl idx='12' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TToolBar' /&gt;&lt;ctrl automationid='' role='push button' /&gt;" Guid="fa211299-d18f-4889-8d12-4c6c75cb0a58" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAArCAYAAAADgWq5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAGdYAABnWARjRyu0AAAlZSURBVFhH7Vh7TFRnFp+YbDe7vHyF1dqGuLp/1W7abP9p0i6LGre+FSqoi0p9QU1rQfHVgdEVUBkVX4gFqlBAIvLwQYsiChR5DYooIiDIIoM8lIcwDgNzgfntOd8NSHXcTAIma6Lxl3vnO/ee73fPd77fOR+KwsJCvElQ3Lp1C28SFFqtFm8SFB0dHXiT8Jbw68Zbwq8bFhFua2tDS0vLa0NrayuePn1qdu4XYRFhFuzo6GhERUXh1KlTI47z58+jrq4Oer0eXV1d0Ol0ZnkwLCIcHx+Pfy1fDq+lS+Ht6gofghdhGWENgcfEuLs7fDZsgJenJ5YtW4Y1bm4v2Xy8veHj44O1a9eKZzzp2b179yIvLw9NTU3o7u4WxM3xYFhEODg4GH9xcMCq995DwLvvIojgQZhKWEjgsUBC0EcfIeibb+CxahWmTp2KhZMmvWQLCgxEUFAQFi9ejClTpmDlypXYs2cPQkJCcOnSJTx79gwGg8EsD4ZFhP39/WH7zh/w5SgH7Fb8FYEEN4UDbBS/g5PiT2IsgMcnzUHgulC4LfGFjc0YTB818SVbYMAFBAamYuZMd9jZjaZob0JcXJyIcnh4uEi/2traV+a0xYRt3rHFnFHO2KRQYbNiJ+YpvoS1whqfKhzho/AXY74TTsB3aSXmzTkFa6sJ+HSU0xDbD8Lmu0kHX189PvtMhXHj7IlkBKqqqhAbG4t9+/Zh165dSEtLExvdHGnLCf9xLBZP84OfUzZU03PgMm0XbH4/Dn+f7AGlUxb8aUy1sAQq7064OMfD2noiHP+8eojttrCp/E1QqQAnpwCK8Fhs27YdycnJIiU2UI5Pnz4doaGhQjna29tf4mIxYTs7e6xYEU2OjTh40Ah39zjY2k7EF1+ocOiQPHbggAx391hKiQlmbSEhvThyxIQFC/Zg9OhxmDt3ntiEmzdvpvu5sLKywtatW/HkyZPhEeblCwqKRmbmYxw+nAEXF2+Rp56e/tBo9IiMLKDInaVnE+DsvJEiPAZeXi/bIiLyceNGN8LCkikAK4moL3bv3i2wZMkSes96ZAjb29sLLeYNERYWhkWLFgnnfn5+6OzsxJkzZ7Bjxw5s376dordA2Pi9F20skayzd+7cwenTp0XuxsTECHBK2NnZjSxh7knZ+XLSZRsbG0GYCVy8eFHIH+/2paTXbOP3XrRxkWDpYr+PHj36DY4fPy7m2bZt20ikxDgEBATg2rVrwvEAqfXr16OgoEBUQdbTQNJZNyoYr7JxZdNoNCgpKcHt27d/A1aJ8ePHjwxhW1tbIfZKpVIs2fz588WyOzo6iijzcm/ZskXgf9n4fufOnQIsYUPh4uIyMjl88uRJsYM5x/jrOXKuVG5nzZoFDw8P8UEq0qoBIvzc7NmzxQeynRVgqP1F8EcM9XnixInhyVpOTg6OHj0qwMu6YsUKrFu3jmTqACnGYZKuQyRVR4SdfzP43pv6BmdnZ7Hh2D7Uxr8H3hvwyaTZZ1ZW1vAKB59WU1JSkJubS7KWKXoBnrSoqEj8ZuFnG/9OTU3F5cuXRU7y5uQV4Xc5b9mWnp4ubExq4D32wTl+7Ngx4ePhw4fDK82VlZUiyixp1dXVYuMkJiaK7qqiokLY+J4lrLi4WBDiCF29elVUMCbb0NAgrvfu3YPRaBS+XvSZlJSE5uZmsxwGYBFhdpifny8mHFAJzmuODqsAjz9+/FhI2N27d0UDc+PGDSQkJECtVuPChQtijH3cv38fkiShvr5+8F3+sKE+Hzx4MLwINzY2iol4uXi5Wey5GGRkZODmzZtiAo4u97JMpLS0VESPU4EjxzrMRMrKysRK9PX1iRXgpsecz/Ly8uER5lMAk+EJOErXr18X4HteUl7i/v5+mEwm9Pb2imXlD+GmnInzlSsb73q283NM+lU+eUWHRZgd9xOpNnJY/9NP0HLFo2LA6KANSWxBLCjKIKKgzdVFG66BKmM99bpaWnYtRbYZPT090Dfroc3RovZaLWqu1ODm2ZvQpGhQfbca2jr5rzucXuZ4MCwmTMcAUFKC1B+kVzJ8fUHHBFC4BGHKBspFeXjjRlAXBtJoUD4PfhOaS5qR8+8cZGzKQPrGdFzZdAVFR4rQUdsBUz89QP/4w8zxYFhOmEG5SFWAm1lQJQG+/x6kSYOEKdUpqqAODvjkE1CJBvUQoDL8nPCTsifQHNLg3PJz+PFvPyJ1TSpKIkvQWdc5goSpTFKygrRMDt3kyQCd0QRh+oh+bT3a6/UovQOcOglqjEC9BDBjBkglgOxsoEHbR890QZtbj6LDRYj/ZzyCrYOR7JqM4h+K0VTcBEOrAaY+kwiQOR4MywhT7tIxAFSSgK++At5/H/jgA+Dbb8VYz7EIXA0tx+GQfuzaaaLWE9QTgI5BoLIrRznqmB6ZoZXI31+ALL8sxDjGINgqGAnzE5Dtl43Cg4WoSa+B1CWh2zBcwiQ74lxDjQxWr5YJT5sGfPediHK3MhDJymKolP3wU5qoh5AJf/45qCzLCxGs1OG8sgRZymyBmH/IhM8uOIvMHZk0loXyhHIYnxlHgDCVUSrywP79z1Pi44/lD6CWsEd9BGnquzig7qcUMA2mxMyZoB5YjnCY+hkuq8uQry5EgbpgMCVS3FKQtzcP+cH5qLpYBUk/EhEmXcSvv4LON/KOcnAAPvxQ3oAkbb05NNn1ZlxKM1FzAzrqyISpu6SjjywuhTlGVF9/jIqkSuTtyUPcjDgR4cTFiSg4UIDq1Gq0VrSizyjrszkeDMsID8gaVSLqF+UIM+GvvwZ++UVWCZIBklAha5zDY8fKKcHpQMVsQEjQVNIkZC3WKRb7x+zHmXlnUBhSiKf/eSqrBP0fNmGudBL1CRJ1VxJ1XxK1ghLlskQJKlH3JdEEEhWWujqJDpwS6a9EkibRIVSizk4iHZZIqiSqiBIaShqQq87Fzxt+RqJrItI2pqEorAitD1ph7DGKPoPnM8eDYRFh8ecjuhqoSTFERsJAqWEID5dBpdTAdpqkvt6Ac+cMRNqA8HAZUVEGaogM0OsNRMSAxvJGFMcUQxOhgSZcRmlSKVoetqBL30V+DINnPnOwiDA3Njq66urqoKNWU0ct5SDo8KhjO6G1VYeaGh21nM9x/76Oegsd+ZDR1tyGxqpGNFQ0DKLpQRPaW9rleWgl+WqOB8Miwv9PeEv49aID/wUHwL2HBqgpogAAAABJRU5ErkJggg==" InformativeScreenshot="0e7023fec00be260a7cf2f91d9b3ae9c.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TSuprimentos' title='Suprimentos - Detella Restaurantes Empresari' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''TButtonFlat''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1195.4285714285713,228" sap2010:WorkflowViewState.IdRef="NClick_61" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable DesignTimeRectangle="924, 62, 70, 37" DesignTimeScaleFactor="1.75" FullSelectorArgument="&lt;wnd cls='TButtonFlat' idx='3' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TButtonFlat' /&gt;" Guid="49cd1b68-733d-473c-a73a-5b8fcf0fd397" InformativeScreenshot="64e615e0d00f0a1477b5ebcde59ef1f6.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TfrmFiltroAF' title='Filtro Autorização de Fornecimento' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click ''TButtonFlat''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1195.4285714285713,228" sap2010:WorkflowViewState.IdRef="NClick_62" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable CVScreenId="9a664484-76d6-4a80-8ad4-dbee4293e0a7" CvElementArea="236, 204, 34, 32" CvType="Icon" DesignTimeRectangle="236, 203, 37, 37" DesignTimeScaleFactor="1.75" FullSelectorArgument="&lt;wnd cls='TButtonFlat' idx='20' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TButtonFlat' /&gt;" Guid="f8ee7e77-1555-4e82-8513-4a23f69c6759" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAGdYAABnWARjRyu0AAAVlSURBVFhH7VfpS1VfFNUsh3KgTHIMyTCwwDFNzWzCQjFn0UwTVFCQcmiyMoqE+lBCJYkaKgiagtkHERHBOQpyitQsodIsyyz/gxVrw43n0/fUuL+IH35Y4PPce846e6+99r4G8/Pz+NexRlItrJFUC2sk1cL/j+Tc3ByeP3+Op0+foqmp6TcGBgbw8+dPgfLs27dv0dLSsuDZ9vZ2fPjwYcFzK8GqSH79+hWPHj1CdnY2cnNzkZOTg6ysLDx+/FguoHl4T08PLl68iLNnzyI/P1/euXnzJgYHB/Hjx48F+y6HVZGcnp7GuXPnEBAQIORSU1Ph4eGBW7du4fv37wsOb2xsxP79+xETE4NLly7h+PHjiIyMREdHh1xIc9/lsCqSU1NTSE5OhqOjI9LS0hAXFwdLS0uJ1Ozs7AKS1dXVsLOzw8GDB1FQUABPT08BJfBXSDo4OOD06dOIioqChYWFXpIHDhyQdXd39/+eJAuhtbUVYWFh2Lx5s6Tcy8sLpqamOHXqFDo7OzExMYHPnz/j5cuXuHHjBrZu3QpXV1ccO3YMTk5O2LVrF+7fvy+FxkuttIBWTJIEz58/Lxo0MjLChg0bsH79ehgaGsLf3x+FhYXo6urC2NgYHj58iOjoaIkynzE2Nsa6detga2uLpKQkVFVVSVZUJ1lWVobAwEAcOnQI+/btk2iSoIGBAezt7UV7rPIXL14gPT1d0nz06FHs3LlTniM2bdoENzc3KT5GfaVVvixJVi1TSPHzEFYrK9vZ2VmiQ5KEubk57ty5g+bmZvj5+YkGL1y4IEQZeeVCRHh4OPr7+zEzM7PkmdpYluTr169RW1uL2NhYmJmZ4cSJExKp7du3LyBJbdKSrl69Kjrcs2ePeCkjz+c0Se7du1cuRC9lNJdLu06S3759k2JpaGhARkaGpM/FxQUhISEIDQ3Ftm3bfh9sZWWFHTt24PDhw7JuY2OD3bt3i9lTBtokWUS87L179/Dq1St8+vRJL1GdJKmZmpoaIUhywcHB8jdTyaplMSiHent7S3R9fX1hbW0ta4wkC+3IkSOL0m1iYiJ7MO3FxcXSavVFVCfJoaEhiQS9jamkcTPt1Jh2ZDTXFELsNvRK2pPiAsrzChj9iIgIPHnyZFFb1YROktQLo8eo8AAWwZcvX5CSkrIoMpprCiEW2Pv373H9+nWxK039KuA+jDwtiwW6apLd3d1iOdyIG7L/8rYsDm2SCQkJ0qupR2WN0aXWOFToIkmwrZaUlKhDkq3t48ePkj5tkqzWzMxMkQZtius08/HxcTF5RvevkKR2KioqRALammQRsJpZ3QR/swsxjfHx8YsupQlVSLK1ceoJCgqStCodhAds3LhRug0thf+nyV+7dk3e42Xy8vLEghhJEufAwSJUnSSNmRMPI8TeS2LKAazOkydPiv1wqKUu+R6HCw67ly9fFjNnE6AVsSHwUpqpV4UkTZxWwhFN20rYw0tLS1FXVycER0ZGRLdtbW3SBOrr65GYmCjZIOm7d++KLFQnySqllTA62lXKrjE8PCw9WJkneRAP5G/iypUr2LJli+i5r69P/FPRuWokqSka9VLWw8+B0dFRvUMsNcq2ycnnwYMH0olUi2Rvb690EB8fH+k89EBuyNRx4iFYSG/evNE7chUVFUmfpyVRu9S45h4sJo6Bf0SSjZ/C57cMjZyVS+Fr4vbt2yIFfSSZBeryzJkzEk1qW3MP+i7Huz/q3TycPbW8vFxuuhT4vcJ2qGtz4tmzZ3r3qKyslM9cfXvoJMnw80P+3bt3MrIthcnJSb1RJDgwcw9d+3DaWm741UnyX8IaSbWwRlItrJFUB/P4BT+z4ZiBRikDAAAAAElFTkSuQmCC" InformativeScreenshot="7ee4225eb248118d3de704e583f5443c.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TSuprimentos' title='Suprimentos - Detella Restaurantes Empresari' /&gt;&lt;wnd cls='TfrmLancaAutoF' title='Lançamento de Autorização de Fornecimento' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                                <uix:NSelectItem DisplayName="Select Item ''Código''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1195.4285714285713,190.28571428571428" sap2010:WorkflowViewState.IdRef="NSelectItem_6" Item="Código" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="3">
+                                      <x:String>Código</x:String>
+                                      <x:String>Nome</x:String>
+                                      <x:String>CDOPERADOR</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable CVScreenId="755cca3f-8bd0-489a-bd94-6935e54ea5ba" CvElementArea="121, 66, 409, 37" CvType="InputBox" DesignTimeRectangle="122, 68, 410, 37" DesignTimeScaleFactor="1.75" ElementType="DropDown" FullSelectorArgument="&lt;wnd cls='TComboBox' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TComboBox' /&gt;" Guid="dd636797-9493-4bea-bb7e-5ad9371182c8" InformativeScreenshot="07be9190d77224cb06761460ffbb399c.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TfrmProcurar' title='Procurar' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                                <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="1195.4285714285713,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="[currentRestaurante]" />
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''TMaskEdit''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1195.4285714285713,228" sap2010:WorkflowViewState.IdRef="NClick_63" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable CVScreenId="187bf97d-cb6e-4050-a55c-85a39c165521" CvElementArea="122, 110, 408, 36" CvType="InputBox" DesignTimeRectangle="122, 112, 410, 37" DesignTimeScaleFactor="1.75" FullSelectorArgument="&lt;wnd cls='TMaskEdit' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TMaskEdit' /&gt;" Guid="438b7878-4749-48d8-802d-ecca3fffc750" InformativeScreenshot="22a075eebbdbe55217bffaaa71d77834.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TfrmProcurar' title='Procurar' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1195.4285714285713,251.42857142857142" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V4">
+                                  <uix:NKeyboardShortcuts.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NKeyboardShortcuts.VerifyOptions>
+                                </uix:NKeyboardShortcuts>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DelayBefore="3" DisplayName="Click ''TButtonFlat''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1195.4285714285713,228" sap2010:WorkflowViewState.IdRef="NClick_64" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable DesignTimeRectangle="558, 61, 70, 37" DesignTimeScaleFactor="1.75" FullSelectorArgument="&lt;wnd cls='TButtonFlat' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TButtonFlat' /&gt;" Guid="5c8b9ebe-24f9-4a0d-9950-9555a1b7edb7" InformativeScreenshot="d2f898e1ff8423de861efef55daa848a.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TfrmProcurar' title='Procurar' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                                <uix:NCheckState DisplayName="Check App State 'Informação'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1195.4285714285713,3944" sap2010:WorkflowViewState.IdRef="NCheckState_3" IsLoose="True" Version="V5">
+                                  <uix:NCheckState.IfExists>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="656,2063.4285714285716" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="621.7142857142857,2001.142857142857" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Informação" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="587.4285714285714,1913.7142857142858" sap2010:WorkflowViewState.IdRef="NApplicationCard_23" IsDisplayNameAuto="True" ScopeGuid="0fc43d0c-7361-478b-aa1b-c63b91b98fbc" Version="V2">
+                                          <uix:NApplicationCard.Body>
+                                            <ActivityAction x:TypeArguments="x:Object">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="553.1428571428571,1578.2857142857142" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''OK''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="518.8571428571429,228" sap2010:WorkflowViewState.IdRef="NClick_96" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0fc43d0c-7361-478b-aa1b-c63b91b98fbc" Version="V5">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable CVScreenId="b5b2395a-f64a-42ec-a3bc-5d5232d1c66f" CvElementArea="222, 158, 134, 46" CvTextArea="272, 169, 31, 21" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="224, 161, 131, 46" DesignTimeScaleFactor="1.75" ElementType="Button" FullSelectorArgument="&lt;wnd cls='TButton' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TButton' title='OK' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='OK' /&gt;" Guid="983cf7c0-9997-403f-8724-acca395cc37b" InformativeScreenshot="608e5c85911e263074b9508c6ac07288.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TMessageForm' title='Informação' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.PointOffset>
+                                                        <uix:PointOffset />
+                                                      </uix:TargetAnchorable.PointOffset>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NClick.Target>
+                                                  <uix:NClick.VerifyOptions>
+                                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionOptions.Retry>
+                                                      <uix:VerifyExecutionOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionOptions.Timeout>
+                                                    </uix:VerifyExecutionOptions>
+                                                  </uix:NClick.VerifyOptions>
+                                                </uix:NClick>
+                                                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Procurar" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518.8571428571429,1288" sap2010:WorkflowViewState.IdRef="NApplicationCard_24" IsDisplayNameAuto="True" ScopeGuid="688a6521-0d95-4c28-95b0-5ec29259e432" Version="V2">
+                                                  <uix:NApplicationCard.Body>
+                                                    <ActivityAction x:TypeArguments="x:Object">
+                                                      <ActivityAction.Argument>
+                                                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                      </ActivityAction.Argument>
+                                                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="484.57142857142856,992.5714285714286" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Fechar''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,228" sap2010:WorkflowViewState.IdRef="NClick_97" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="688a6521-0d95-4c28-95b0-5ec29259e432" Version="V5">
+                                                          <uix:NClick.Target>
+                                                            <uix:TargetAnchorable CVScreenId="2ee951d2-078c-4995-ad7c-df24aaa03103" CvElementArea="590, 8, 30, 29" CvType="CloseButton" DesignTimeRectangle="575, 1, 61, 46" DesignTimeScaleFactor="1.75" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Fechar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Fechar' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Fechar' /&gt;" Guid="72219ea2-82c7-40dd-92c7-3043c2145002" InformativeScreenshot="23acb9287e54935539619ce09d489c72.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TfrmProcurar' title='Procurar' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                                                              <uix:TargetAnchorable.PointOffset>
+                                                                <uix:PointOffset />
+                                                              </uix:TargetAnchorable.PointOffset>
+                                                            </uix:TargetAnchorable>
+                                                          </uix:NClick.Target>
+                                                          <uix:NClick.VerifyOptions>
+                                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                              <uix:VerifyExecutionOptions.Retry>
+                                                                <InArgument x:TypeArguments="x:Boolean" />
+                                                              </uix:VerifyExecutionOptions.Retry>
+                                                              <uix:VerifyExecutionOptions.Timeout>
+                                                                <InArgument x:TypeArguments="x:Double" />
+                                                              </uix:VerifyExecutionOptions.Timeout>
+                                                            </uix:VerifyExecutionOptions>
+                                                          </uix:NClick.VerifyOptions>
+                                                        </uix:NClick>
+                                                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Suprimentos - Detella Restaurantes Empresari" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="450.2857142857143,702.2857142857143" sap2010:WorkflowViewState.IdRef="NApplicationCard_25" IsDisplayNameAuto="True" ScopeGuid="cfa095b6-42a2-49d6-b122-251c56b62224" Version="V2">
+                                                          <uix:NApplicationCard.Body>
+                                                            <ActivityAction x:TypeArguments="x:Object">
+                                                              <ActivityAction.Argument>
+                                                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                              </ActivityAction.Argument>
+                                                              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,406.85714285714283" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Fechar''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="381.7142857142857,228" sap2010:WorkflowViewState.IdRef="NClick_98" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cfa095b6-42a2-49d6-b122-251c56b62224" Version="V5">
+                                                                  <uix:NClick.Target>
+                                                                    <uix:TargetAnchorable CVScreenId="34536395-dd3c-4d4c-b2fb-654f33c2b538" CvElementArea="1757, 156, 59, 36" CvType="CloseButton" DesignTimeRectangle="1763, 157, 56, 32" DesignTimeScaleFactor="1.75" ElementType="Button" FullSelectorArgument="&lt;wnd cls='TfrmLancaAutoF' title='Lançamento de Autorização de Fornecimento' /&gt;&lt;ctrl name='Fechar' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TfrmLancaAutoF' title='Lançamento de Autorização de Fornecimento' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;ctrl name='Fechar' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Fechar' /&gt;" Guid="35c9b961-4879-465b-8bd8-f99399cc3118" InformativeScreenshot="75472a689d4d2fd7ffbbb9c45939176f.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TSuprimentos' title='Suprimentos - Detella Restaurantes Empresari' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive">
+                                                                      <uix:TargetAnchorable.PointOffset>
+                                                                        <uix:PointOffset />
+                                                                      </uix:TargetAnchorable.PointOffset>
+                                                                    </uix:TargetAnchorable>
+                                                                  </uix:NClick.Target>
+                                                                  <uix:NClick.VerifyOptions>
+                                                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                      <uix:VerifyExecutionOptions.Retry>
+                                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                                      </uix:VerifyExecutionOptions.Retry>
+                                                                      <uix:VerifyExecutionOptions.Timeout>
+                                                                        <InArgument x:TypeArguments="x:Double" />
+                                                                      </uix:VerifyExecutionOptions.Timeout>
+                                                                    </uix:VerifyExecutionOptions>
+                                                                  </uix:NClick.VerifyOptions>
+                                                                </uix:NClick>
+                                                                <Throw Exception="[New Exception(&quot;AF não localizada: &quot; + currentAF)]" sap:VirtualizedContainerService.HintSize="381.7142857142857,116.57142857142857" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                                                              </Sequence>
+                                                            </ActivityAction>
+                                                          </uix:NApplicationCard.Body>
+                                                          <uix:NApplicationCard.TargetApp>
+                                                            <uix:TargetApp Area="1906, -14, 1948, 1038" FilePath="C:\Program Files (x86)\Teknisa Web\Bin\Client\sup.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAGdYAABnWARjRyu0AAAFUSURBVFhHvY6LEoMwCAT9dP+85QQKAfLQttmZjXoQ8Pg9r9fYLVSLo9uolqvbqJarW6gWq1uoFqtbqBarW6gWw6skL38lLnY78QNAPv9EZ7kiP7DqTSbLHfiNxpjhe0EH3WqM9ZZmGURW5VqrMpMSp6t3aYapd3OIktfyDT+A2Ks5xB0s6tE0+0urOSKv5iruYFGPq6G6FLMqx6dXc6/sGFJeilnM8erVPIo7WDJCm5LVMH7S6URW6WYNmV0OUrXRaudpz9PyKd0fyBmdTsv5GUWOBTO6l+2dziBydTQDC2aUAzTDI4rc27svLlEMoDNJR+iD9f2l5dR6+bkg31k66YmXbJXLvBWofehn2BNXyYsVFLmnRLqmfbeQkQYyLjVI1UDGpefIqAxq3HIhaQY1bnmGjMmgxi0XkmZQ45bnyCgDGZcapGog49L3yMjpUOm6s/w43sDLvf0DCdkhAAAAAElFTkSuQmCC" InformativeScreenshot="fda723b135b4aca524ebff30058ee126.png" Selector="&lt;wnd app='sup.exe' cls='TSuprimentos' title='Suprimentos - Detella Restaurantes Empresari' /&gt;" Version="V2" />
+                                                          </uix:NApplicationCard.TargetApp>
+                                                        </uix:NApplicationCard>
+                                                      </Sequence>
+                                                    </ActivityAction>
+                                                  </uix:NApplicationCard.Body>
+                                                  <uix:NApplicationCard.TargetApp>
+                                                    <uix:TargetApp Area="2559, 427, 642, 233" FilePath="C:\Program Files (x86)\Teknisa Web\Bin\Client\sup.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAGdYAABnWARjRyu0AAAKqSURBVGhD3Y+BluowCET9dP/cHSK8phTIpGo1755zWTcZSLn9Fo/HOZch+njG5YiWYF2WaJnK5YiWqFyWaJnK5YiWqFyOaInK5YiWqFyOaInK5YiWqFyOaInK5YiWiFyWaJlI5aHovwvgF/E6dL/jxc/iF/I6dL+GHv04fqHeAl3wXX4Av0wvwX+/oCJhWTW1ytjdCwZgcmrVF9Ma0JpaZezuBQMwObXqi2kNaE21DJMVmVw/bxM3iai+j6Y12IBIyzBZkcn18zZxk4jq+2hagw2oZLMzM02JZ6J2uX/StIZ+SCabnZuJmoh60GZDmtYQDfOy2bmZqImoB202pGkN0TAvm2Vycp2JmmqzIU1riIZ52SyTk+tM1FSbDWn6pnCoyWTEKifHmahDbTak6ZvCoSaTEaucHGeiDrXZcJrWGA01mYyY5eQoE5XSZsNp+uah0eOmz8jPTFTK/m11mmhIavQRps/Iz0xUyv5tdZrWGA33WnYs0qnH/P3+1P9/7zLwNG0Anh5q2bFIpx7zP7VgdG7KdSaqy3LvWg6ehnpIHOXkOhPVZbl3LQdPQz0kRjk5Gol6kH3XcvA0/ZDwEbO/l58jUVPZ9zpPsxsUPWT29/JzJGoq+17nyxAPopaOZ5jce823QTyIWjqeYXLvNc+CETu3Rzd9JhcVf5/K75FMVjNnwYid26ObPpOLir9P5fdIJquZV8GoU24f+WHfRbTE3h5pUFla3qPnV7BfJrJHGlSWlvfo+dcIP6rHMhIu0HSM3KuX0x6usIyECzQdI/fqZbQHZ9Aez9Qcy0vjp5n6MEF7PFNzLC+Nn2bqwwTt8UzNsbw0XsXwAy0j4QJNx8i9ejnt4QrLSLhA0zFyr36N9gE9diaXJIcZgp5/ncPH2ZlckhxmCHr+Bm63P7MUV3fs5bgmAAAAAElFTkSuQmCC" InformativeScreenshot="53ff846d4618bb1b6333a2ed949497e7.png" Selector="&lt;wnd app='sup.exe' cls='TfrmProcurar' title='Procurar' /&gt;" Version="V2" />
+                                                  </uix:NApplicationCard.TargetApp>
+                                                </uix:NApplicationCard>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </uix:NApplicationCard.Body>
+                                          <uix:NApplicationCard.TargetApp>
+                                            <uix:TargetApp Area="2589, 420, 581, 238" FilePath="C:\Program Files (x86)\Teknisa Web\Bin\Client\sup.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAGdYAABnWARjRyu0AAAKqSURBVGhD3Y+BluowCET9dP/cHSK8phTIpGo1755zWTcZSLn9Fo/HOZch+njG5YiWYF2WaJnK5YiWqFyWaJnK5YiWqFyOaInK5YiWqFyOaInK5YiWqFyOaInK5YiWiFyWaJlI5aHovwvgF/E6dL/jxc/iF/I6dL+GHv04fqHeAl3wXX4Av0wvwX+/oCJhWTW1ytjdCwZgcmrVF9Ma0JpaZezuBQMwObXqi2kNaE21DJMVmVw/bxM3iai+j6Y12IBIyzBZkcn18zZxk4jq+2hagw2oZLMzM02JZ6J2uX/StIZ+SCabnZuJmoh60GZDmtYQDfOy2bmZqImoB202pGkN0TAvm2Vycp2JmmqzIU1riIZ52SyTk+tM1FSbDWn6pnCoyWTEKifHmahDbTak6ZvCoSaTEaucHGeiDrXZcJrWGA01mYyY5eQoE5XSZsNp+uah0eOmz8jPTFTK/m11mmhIavQRps/Iz0xUyv5tdZrWGA33WnYs0qnH/P3+1P9/7zLwNG0Anh5q2bFIpx7zP7VgdG7KdSaqy3LvWg6ehnpIHOXkOhPVZbl3LQdPQz0kRjk5Gol6kH3XcvA0/ZDwEbO/l58jUVPZ9zpPsxsUPWT29/JzJGoq+17nyxAPopaOZ5jce823QTyIWjqeYXLvNc+CETu3Rzd9JhcVf5/K75FMVjNnwYid26ObPpOLir9P5fdIJquZV8GoU24f+WHfRbTE3h5pUFla3qPnV7BfJrJHGlSWlvfo+dcIP6rHMhIu0HSM3KuX0x6usIyECzQdI/fqZbQHZ9Aez9Qcy0vjp5n6MEF7PFNzLC+Nn2bqwwTt8UzNsbw0XsXwAy0j4QJNx8i9ejnt4QrLSLhA0zFyr36N9gE9diaXJIcZgp5/ncPH2ZlckhxmCHr+Bm63P7MUV3fs5bgmAAAAAElFTkSuQmCC" InformativeScreenshot="fe0dac95915fa7c9f2918dc94812091e.png" Selector="&lt;wnd app='sup.exe' cls='TMessageForm' title='Informação' /&gt;" Version="V2" />
+                                          </uix:NApplicationCard.TargetApp>
+                                        </uix:NApplicationCard>
+                                      </Sequence>
+                                    </Sequence>
+                                  </uix:NCheckState.IfExists>
+                                  <uix:NCheckState.IfNotExists>
+                                    <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="484.57142857142856,3701.714285714286" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450.2857142857143,315.42857142857144" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Fechar''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,221.14285714285714" sap2010:WorkflowViewState.IdRef="NClick_65" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable CVScreenId="8cfb2a37-f7eb-4a1e-82d3-d731fef4f17e" CvElementArea="591, 8, 29, 29" CvType="CloseButton" DesignTimeRectangle="575, 1, 61, 46" DesignTimeScaleFactor="1.75" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Fechar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Fechar' role='push button' automationid='' check:text='Fechar' /&gt;" Guid="08c00e6a-01b8-4dc9-92ed-fb56d3237b56" InformativeScreenshot="9c3e23a97b409bb5a5be69b9d1b423f1.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TfrmProcurar' title='Procurar' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                          <uix:NClick.VerifyOptions>
+                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionOptions.Retry>
+                                              <uix:VerifyExecutionOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionOptions.Timeout>
+                                            </uix:VerifyExecutionOptions>
+                                          </uix:NClick.VerifyOptions>
+                                        </uix:NClick>
+                                      </Sequence>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''AF''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,228" sap2010:WorkflowViewState.IdRef="NClick_66" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CVScreenId="74f9dade-4fc1-468b-b135-d88a96dfc896" CvElementArea="249, 243, 79, 42" CvTextArea="273, 253, 29, 21" CvTextArgument="AF" CvType="Button" DesignTimeRectangle="251, 247, 73, 31" DesignTimeScaleFactor="1.75" ElementType="TabPage" FullSelectorArgument="&lt;wnd cls='TfrmLancaAutoF' title='Lançamento de Autorização de Fornecimento' /&gt;&lt;wnd cls='TPageControl' /&gt;&lt;ctrl name='AF' role='page tab' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TfrmLancaAutoF' title='Lançamento de Autorização de Fornecimento' /&gt;&lt;wnd cls='TPageControl' /&gt;&lt;ctrl name='AF' role='page tab' automationid='' check:text='AF' /&gt;" Guid="8f825919-bd56-4e0c-a8ee-9b8c46b8f33a" InformativeScreenshot="4ff818d44aff74e3b50d7b0acdfa67a2.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TSuprimentos' title='Suprimentos - Detella Restaurantes Empresari' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click ''TButtonFlat''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,228" sap2010:WorkflowViewState.IdRef="NClick_67" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CVScreenId="348f0586-5e1a-47e4-9a18-54d9a8103f2a" CvElementArea="243, 204, 34, 32" CvType="Icon" DesignTimeRectangle="243, 203, 37, 37" DesignTimeScaleFactor="1.75" FullSelectorArgument="&lt;wnd cls='TButtonFlat' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TButtonFlat' /&gt;" Guid="f64622cf-2e77-4df7-b24b-555491300d13" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAGdYAABnWARjRyu0AAAVcSURBVFhH7VfrL5d/GEboKEsoTVaUtrKR5TAqRWGzzmkywtBoOeR8HvOi3pgxq1Wj3shhc3hh1qwt1CwbakZMzCmJIv/B1a57e9r3K98v2vNr7Tcvrs3j+Xw/n+tz3/d1X/djsLS0hH8dGyTVwgZJtbBBUi38/0guLCzg3bt3aG5uRlNT0y/09fXhx48fAmXtyMgIWltbtda+evUKExMTWuvWgnWRnJubQ2VlJRISEpCSkoLk5GTEx8ejrq5OLqB5+Js3b5CZmYmkpCSkpqbi7t27KC4uxvv377G4uKi172pYF8mZmRmkp6fD29sbd+7cQWRkJFxcXHD//n18//5d6/CGhgacPHkS165dQ1ZWFgIDA3H58mW8fv1aLqS572pYF8np6WmEh4dj//79iI6ORnBwMHbu3CmR+vbtmxbJZ8+ewcbGBmfPnhWSx48fF7AE/gpJW1tbRERE4MqVKzAzM9NL8vTp0/Le2dn5vydJIbx8+RJBQUGwsLCQlLu6umLLli0ICwtDe3s7RkdH8eXLF/T09KCoqAiWlpY4cuQIAgICJPr8u7y8XITGS61VQGsmSYKsR9bgpk2bYGpqCmNjYxgaGsLLywv5+fno6OjAx48f8fDhQ1y9elWizDVca2RkhL1798qFGGVmRXWSjx8/FiGwxjw8PLBr1y4haGBggH379uHMmTOora1Fd3e31CvT7Ofnh0OHDsk6Yvv27Th69KhcdmxsbM0qX5UkVcsUZmdnY8eOHaLWuLg4HDhwQKJDkgSjVlJSgpaWFrkEazAjIwPnzp2TyCsXIi5cuIDe3l58/fp1xTOXY1WSAwMDePHihZDbtm0bLl68KJGys7PTIrl161ZpSXl5eTh8+DCcnJxw7949iTzXaZJ0c3OTC7GXMpqrpV0nyfn5eRFLfX09YmNjJX0ODg7w9/cX8VhbW/862NzcHAcPHoSvr6+8t7KywrFjx6TZswyWk+QFL126hLKyMvT39+Pz5896ieokyZqprq7G7du3hZyPjw9iYmIklSRBMSiHUuWMrru7O3bv3i3vGMm0tDSpy+XpZkeg8pmV0tJSqWN9EdVJ8sOHD5Iupc2wcZP0SjWmvNMkRJE9f/5c1Kx0AWW9Ant7e3Eh+vpyW9WETpKsF6Zq8+bNcgBFMDs7i1u3bv12KN9RXJrvrl+/jvHxcRQWFsLExESrfhXwQow8WxYFum6SnZ2d0rC5ETekurlRVFTUbyRv3rwpXs16VCJ548YN8XoOFbpIErTViooKdUjS2iYnJ1dMH9XKtkTbYy/kb9jMKTw2ea7/KySpxqdPn4qAlquVIqCaqW6Cz3QhppERVaKrrNeEKiS5CQeKU6dOISQk5JeD8AD2TboNfZn/52xZUFAgv+NlOHOyrhlJEqctssZVJ8mhgBMPI8RDSEw5gOoMDQ2V1sShlnVJ/+ZwkZiYiJycHGnmbPRUPsXES2mmXhWSjIiuVuLp6YlHjx6hpqZGCA4ODkrdtrW1iQlwYmf0SYSNnS7DslCdJGtKVythM6Zj0IOVeZIH8UA+07Vyc3OlzbCe3759K3sqda4aSaaLkaIvLxcAG/HQ0JDeIZY1Stvk5MNZkk6kWiR5a7rLiRMnJFXnz5+XDTntcBoimMrh4WG9Ixf75J49e2RAYe06Ojpq7cHpnWPgH5FkGln49GR+o1C5LHyCBxIPHjyQT1R9JGmXbPYUEr2cnx+ae/CZ490feTfrsLGxEU+ePJGbrgR+r9AqdW1OdHV16d2jqqpKPnP17aGTJMPPKH369EmcYyVMTU3pjSJBT9e3B7+LVht+dZL8l7BBUi1skFQLGyTVwRJ+AtOb4e+hhg2lAAAAAElFTkSuQmCC" InformativeScreenshot="996760cf1e3326056c929e34b1222867.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TSuprimentos' title='Suprimentos - Detella Restaurantes Empresari' /&gt;&lt;wnd cls='TfrmLancaAutoF' title='Lançamento de Autorização de Fornecimento' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''TMaskEdit''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,228" sap2010:WorkflowViewState.IdRef="NClick_68" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CVScreenId="4f47c376-3f95-40d9-b209-87e3ec0c69c4" CvElementArea="124, 110, 406, 35" CvType="InputBox" DesignTimeRectangle="122, 112, 410, 37" DesignTimeScaleFactor="1.75" FullSelectorArgument="&lt;wnd cls='TMaskEdit' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TMaskEdit' /&gt;" Guid="d57d3160-4ad1-4f81-8e2c-ff8916f68ed2" InformativeScreenshot="e99fe1c954d1a6a109b06ad54858f63e.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TfrmProcurar' title='Procurar' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="450.2857142857143,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_2" Text="[currentAF]" />
+                                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,251.42857142857142" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V4">
+                                        <uix:NKeyboardShortcuts.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NKeyboardShortcuts.VerifyOptions>
+                                      </uix:NKeyboardShortcuts>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Parte''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,228" sap2010:WorkflowViewState.IdRef="NClick_69" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CVScreenId="4f47c376-3f95-40d9-b209-87e3ec0c69c4" CvElementArea="393, 175, 25, 26" CvTextArea="426, 178, 56, 19" CvTextArgument="Parte" CvType="RadioButton" DesignTimeRectangle="395, 177, 123, 30" DesignTimeScaleFactor="1.75" ElementType="RadioButton" FullSelectorArgument="&lt;wnd cls='TGroupBox' title='Tipo' /&gt;&lt;wnd cls='TRadioButton' title='Parte' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TGroupBox' title='Tipo' /&gt;&lt;wnd cls='TRadioButton' title='Parte' check:fulltext='Parte' /&gt;" Guid="dbc1489a-f217-4402-96d2-f7e7f5a9602d" InformativeScreenshot="139ccb04e16886a6e5102547f1ee3c17.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TfrmProcurar' title='Procurar' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''TButtonFlat''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,228" sap2010:WorkflowViewState.IdRef="NClick_70" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable DesignTimeRectangle="558, 61, 70, 37" DesignTimeScaleFactor="1.75" FullSelectorArgument="&lt;wnd cls='TButtonFlat' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TButtonFlat' /&gt;" Guid="fa49673a-f633-4126-b9f2-7852b1d87e4f" InformativeScreenshot="853b86c079e4e9988f74bb43667330c1.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TfrmProcurar' title='Procurar' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Fechar''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,228" sap2010:WorkflowViewState.IdRef="NClick_71" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CVScreenId="4f47c376-3f95-40d9-b209-87e3ec0c69c4" CvElementArea="590, 8, 30, 29" CvType="CloseButton" DesignTimeRectangle="575, 1, 61, 46" DesignTimeScaleFactor="1.75" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Fechar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Fechar' role='push button' automationid='' check:text='Fechar' /&gt;" Guid="6c6a30ab-8841-4f10-9ade-83da16864141" InformativeScreenshot="b041dfc805ac8255628eb609ff88fb44.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TfrmProcurar' title='Procurar' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''TButtonFlat''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,228" sap2010:WorkflowViewState.IdRef="NClick_72" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CVScreenId="0d33de9b-a58b-46a6-9de8-bd772c10c665" CvElementArea="654, 204, 34, 34" CvType="Icon" DesignTimeRectangle="653, 203, 37, 37" DesignTimeScaleFactor="1.75" FullSelectorArgument="&lt;wnd cls='TButtonFlat' idx='8' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TButtonFlat' /&gt;" Guid="62efbd9b-864f-4866-847b-bf121fc0d9ef" ImageBase64="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" InformativeScreenshot="baaad9d35ce24a9acb1d5f96cae6cdf1.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TSuprimentos' title='Suprimentos - Detella Restaurantes Empresari' /&gt;&lt;wnd cls='TfrmLancaAutoF' title='Lançamento de Autorização de Fornecimento' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''&amp;Sim''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,228" sap2010:WorkflowViewState.IdRef="NClick_73" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CVScreenId="2249f844-8c4d-44c0-b462-c9575cb643b9" CvElementArea="158, 160, 130, 43" CvTextArea="202, 169, 38, 21" CvTextArgument="Sim" CvType="Button" DesignTimeRectangle="158, 161, 131, 46" DesignTimeScaleFactor="1.75" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Sim' cls='TButton' title='&amp;amp;Sim' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Sim' cls='TButton' title='&amp;amp;Sim' check:text='&amp;amp;Sim' /&gt;" Guid="dbda4fb5-913f-424b-88da-e496acc53888" InformativeScreenshot="46371da2ac978ab61289ea0f4d6de90e.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TMessageForm' title='Confirmação' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''OK''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,228" sap2010:WorkflowViewState.IdRef="NClick_74" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CVScreenId="4384038e-f8b1-4fdd-8e7d-5a74390b514e" CvElementArea="410, 197, 133, 41" CvTextArea="461, 206, 29, 19" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="413, 199, 131, 40" DesignTimeScaleFactor="1.75" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='2' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2' title='OK' check:text='OK' /&gt;" Guid="08e9ad06-af07-424c-98fd-442c932519c7" InformativeScreenshot="2f3a1f4c707e56349945aad02fda71a4.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='#32770' title='Suprimentos' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,251.42857142857142" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" InteractionMode="SameAsCard" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Shortcuts="[d(hk)][k(f9)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V4">
+                                        <uix:NKeyboardShortcuts.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NKeyboardShortcuts.VerifyOptions>
+                                      </uix:NKeyboardShortcuts>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''TButtonFlat''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,228" sap2010:WorkflowViewState.IdRef="NClick_75" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CVScreenId="87dfaf92-ea80-4c9c-b444-f3e4832f44bb" CvElementArea="378, 204, 38, 34" CvType="Icon" DesignTimeRectangle="380, 203, 37, 37" DesignTimeScaleFactor="1.75" FullSelectorArgument="&lt;wnd cls='TButtonFlat' idx='25' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TButtonFlat' /&gt;" Guid="defa2101-bd59-405b-9f3c-164016d42dc6" ImageBase64="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" InformativeScreenshot="a722a1f8fa4a2fd99b797f8d5eb75f1d.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TSuprimentos' title='Suprimentos - Detella Restaurantes Empresari' /&gt;&lt;wnd cls='TfrmLancaAutoF' title='Lançamento de Autorização de Fornecimento' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,228" sap2010:WorkflowViewState.IdRef="NClick_76" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CVScreenId="906b635e-98d8-471d-a688-6cc4521d0364" CvElementArea="205, 158, 135, 47" CvTextArea="251, 171, 40, 19" CvTextArgument="Não" CvType="Button" DesignTimeRectangle="208, 161, 131, 46" DesignTimeScaleFactor="1.75" ElementType="Button" FullSelectorArgument="&lt;wnd aaname='Não' cls='TButton' title='&amp;amp;Não' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Não' cls='TButton' title='&amp;amp;Não' check:text='&amp;amp;Não' /&gt;" Guid="59d542f2-8457-49ea-ae91-814104240e3b" InformativeScreenshot="4e3408b48334edd8cecf3e593fdbf70a.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TMessageForm' title='Confirmação' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Fechar''" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450.2857142857143,221.14285714285714" sap2010:WorkflowViewState.IdRef="NClick_78" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cb00a1b-b588-48e2-92ca-43a917d9e08b" Version="V4">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable CVScreenId="a691fbc3-d4aa-4797-8ddf-d05188704426" CvElementArea="1757, 156, 59, 36" CvType="CloseButton" DesignTimeRectangle="1763, 157, 56, 32" DesignTimeScaleFactor="1.75" ElementType="Button" FullSelectorArgument="&lt;wnd cls='TfrmLancaAutoF' title='Lançamento de Autorização de Fornecimento' /&gt;&lt;ctrl name='Fechar' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd cls='TfrmLancaAutoF' title='Lançamento de Autorização de Fornecimento' /&gt;&lt;ctrl name='Fechar' role='push button' automationid='' check:text='Fechar' /&gt;" Guid="fd2b893d-bde4-4181-b180-02307e22350a" InformativeScreenshot="b3748d30e2f78ab8d9cc7c65da3d6b93.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TSuprimentos' title='Suprimentos - Detella Restaurantes Empresari' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                    </Sequence>
+                                  </uix:NCheckState.IfNotExists>
+                                  <uix:NCheckState.Target>
+                                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 551, 238" Guid="3d9d3b23-ebcb-4652-a564-851a3c378a01" InformativeScreenshot="d1d1632495fef1ac25fca5f5ff4f3f62.png" ScopeSelectorArgument="&lt;wnd app='sup.exe' cls='TMessageForm' title='Informação' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                                  </uix:NCheckState.Target>
+                                </uix:NCheckState>
+                              </Sequence>
+                            </ActivityAction>
+                          </uix:NApplicationCard.Body>
+                          <uix:NApplicationCard.TargetApp>
+                            <uix:TargetApp Area="1901, 0, 1934, 1024" FilePath="C:\Program Files (x86)\Teknisa Web\Bin\Client\sup.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAGdYAABnWARjRyu0AAAFUSURBVFhHvY6LEoMwCAT9dP+85QQKAfLQttmZjXoQ8Pg9r9fYLVSLo9uolqvbqJarW6gWq1uoFqtbqBarW6gWw6skL38lLnY78QNAPv9EZ7kiP7DqTSbLHfiNxpjhe0EH3WqM9ZZmGURW5VqrMpMSp6t3aYapd3OIktfyDT+A2Ks5xB0s6tE0+0urOSKv5iruYFGPq6G6FLMqx6dXc6/sGFJeilnM8erVPIo7WDJCm5LVMH7S6URW6WYNmV0OUrXRaudpz9PyKd0fyBmdTsv5GUWOBTO6l+2dziBydTQDC2aUAzTDI4rc27svLlEMoDNJR+iD9f2l5dR6+bkg31k66YmXbJXLvBWofehn2BNXyYsVFLmnRLqmfbeQkQYyLjVI1UDGpefIqAxq3HIhaQY1bnmGjMmgxi0XkmZQ45bnyCgDGZcapGog49L3yMjpUOm6s/w43sDLvf0DCdkhAAAAAElFTkSuQmCC" InformativeScreenshot="0d093de1ebcb772500f8dfc1099a6c86.png" Selector="&lt;wnd app='sup.exe' cls='TSuprimentos' title='Suprimentos - Detella Restaurantes Empresari' /&gt;" Version="V1" />
+                          </uix:NApplicationCard.TargetApp>
+                        </uix:NApplicationCard>
+                      </Sequence>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1302.857142857143,105.71428571428571" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachRow.Body>
+          </ui:ForEachRow>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,226.28571428571428" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="381.7142857142857,166.28571428571428" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[&quot;DataTable vazio ou nulo&quot;]" />
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>
